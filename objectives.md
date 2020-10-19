@@ -6,7 +6,7 @@ The end goal of this project is to solve the problems described, by extending th
 Overview of relevant components
 -------------------------------
 
-<img src="./images/components.svg">
+<img src="images/components.svg" alt="overview of relevant components">
 
 Changes will need to be made to three different services to achieve the stated objectives.
 

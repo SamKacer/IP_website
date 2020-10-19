@@ -31,7 +31,7 @@ What my team worked on
 
     -   Query engine forwards the stream of query results back to the client
 
-<img src="./images/qe_overview.svg">
+<img src="images/qe_overview.svg" alt="diagram giving overview of Query Engine workflow">
 
 Motivation for developing the system
 ------------------------------------
