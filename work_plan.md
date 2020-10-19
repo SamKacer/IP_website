@@ -28,7 +28,7 @@ Strategies
 
     -   Since need to write tests before code, keeps test coverage high as code grows
 
-<img src="./images/tdd.png">
+<img src="images/tdd.png" alt="diagram of TDD workflow">
 
 [Source and more info](https://www.guru99.com/test-driven-development.html)
 
