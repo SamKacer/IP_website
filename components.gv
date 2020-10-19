@@ -1,0 +1,10 @@
+digraph G {
+    label = "Services Overview"
+
+    query_engine [label = "Query Engine"]
+    rw_api [label = "ReadWrite API"]
+    dsr [label = "Dataset Registry (DSR)"]
+
+    query_engine -> dsr [ label = "gets dataset meta info from" ]
+    query_engine -> rw_api [ label = "uses to get handle for reading datasets" ]
+}

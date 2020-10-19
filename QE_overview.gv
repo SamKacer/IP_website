@@ -1,0 +1,15 @@
+digraph G {
+    label = "Overview of Query Engine Workflow"
+    forcelabels = true
+
+    query_engine [label ="Query Engine", xlabel = "Parses query and compiles into a distributed execution plan."]
+    client [label = "Client"]
+    executors_cluster [label = "Executors Cluster", xlabel = "Execution plan is distributed over many nodes in the cluster."]
+    message_queue [label = "Distributed Message Queue"]
+
+ client -> query_engine [label = " send query request"]
+ query_engine -> executors_cluster [label = " send execution plan"]
+ executors_cluster -> message_queue [label = " executor nodes publish results"]
+ message_queue -> query_engine [label = " topic for query results is listened to" ]
+ query_engine -> client [ label = "    streams query results"]
+}
