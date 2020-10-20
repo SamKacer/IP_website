@@ -1,7 +1,11 @@
 Extending an in-house Query Engine with support for Apache Cassandra
 ====================================================================
 
-Samuel Kacer \| 2093358 \| <img src="images/CompSci_colour.pdf" alt="University of Glasgow School of Computing Science">
+Samuel Kacer \| 2093358
+
+<img src="images/uog_logo.png" alt="University of Glasgow School of Computing Science">
+
+---
 
 With ever increasing amounts of data to store and process, companies turn to Big Data solutions where the work is distributed over many nodes working together in a cluster. However with this come some big challenges.
 
@@ -11,6 +15,7 @@ In order to address these challenges, the company developed an in house Query En
 
 This project identifies Apache Cassandra as an excellent technology to fill the gap that currently supported technologies don’t address well and proposes a plan for integrating it with the Query Engine in order to solve some of its current problems.
 
+---
 
 -   [Background](background), overview of partnering company and project problem description
 
