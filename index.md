@@ -1,6 +1,8 @@
 Extending an in-house Query Engine with support for Apache Cassandra
 ====================================================================
 
+Samuel Kacer \| 2093358 \| <img src="images/CompSci_colour.pdf" alt="University of Glasgow School of Computing Science">
+
 With ever increasing amounts of data to store and process, companies turn to Big Data solutions where the work is distributed over many nodes working together in a cluster. However with this come some big challenges.
 
 Some of these challenges are moving to Big Data usually makes querying and other basic operations more technical, increasing the reliance of financial analysts on engineers. As well as each Big Data service having its own language, making migrating existing code to the newest tech require major refactoring costs.
