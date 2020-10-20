@@ -35,4 +35,4 @@ Deliverables
 
 -   documentation of the code changes, aimed at developers that will move the project forward after handoff
 
-Next: [Work Plan](work_plan) | [back to index](index)
+Next: [Work Plan](work_plan) \| [back to index](index)

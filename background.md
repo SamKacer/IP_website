@@ -119,4 +119,4 @@ Idea: kill two birds with one stone
 
     -   Wile abstracting the complexity of Spark and providing a simple querying language interface for the users
 
-Next: [Objectives](objectives) | [back to index](index)
+Next: [Objectives](objectives) \| [back to index](index)
