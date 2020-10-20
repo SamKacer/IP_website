@@ -54,7 +54,9 @@ Motivation for developing the system
 
 -   But programming using a distributed processing framework like MapReduce introduces high barrier of entry
 
-    -   Need experts to code your queries!
+    -   Need programming experts to code your queries!
+
+    - but most end users are financial analysts with little or no programming experience
 
 -   **Solution**: write simple queries with our language and our query engine will turn it into a distributed program for you!
 
@@ -87,7 +89,13 @@ Introducing Cassandra
 
 -   So Cassandra can complement HDFS very well in the cases where it is more suitable!
 
-A major problem with Cassandra
+- already easily accessible at company to developers through platform providing Cassandra as a service, however:
+
+    - developers sometimes forgo using Cassandra and use HDFS to have direct compatibility with the Query Engine, even though Cassandra might be more appropriate
+
+    - use Cassandra, but reformat data into HDFS for compatibility with the Query Engine, leading to aforementioned time and space costs
+
+Another major problem with Cassandra
 ------------------------------
 
 -   Each record has a unique key on which it is also sorted on and optionally some clustering keys
@@ -97,6 +105,8 @@ A major problem with Cassandra
 -   Consequence: queries using Cassandra’s native CQL are only efficient when selecting by specific keys, range of keys, or clustering keys
 
 -   All other queries including virtually all aggregating operations are super inefficient!
+
+- for efficient CQL queries need to design dataset schema in mind beforehand and so ad hoc analysis is very impractical
 
 -   Can get around this by processing Cassandra data through Spark, a distributed processing framework
 
@@ -115,7 +125,7 @@ Idea: kill two birds with one stone
 
 -   Query Engine already uses Spark as its distributed processing framework for creating execution plans
 
-    -   Can provide efficient aggregate results for data in Cassandra
+    -   Can provide efficient aggregate results for data in Cassandra allowing for performant ad hoc analysis
 
     -   Wile abstracting the complexity of Spark and providing a simple querying language interface for the users
 
